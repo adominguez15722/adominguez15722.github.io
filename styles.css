@@ -1,0 +1,84 @@
+html{
+    background: url(./keyboard.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: white;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 98vw;
+    height: 3vw;
+    top: 0;
+    font-size: larger;
+}
+
+a {
+    color: white;
+}
+
+#headshot {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 10vw;
+    height: 10vw;
+}
+
+p {
+    width: 85vw;
+}
+
+/* #skill_tree {
+    display: flex;
+    justify-content: center;
+} */
+
+#centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul, li {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#skills_list {
+    font-size: x-large;
+}
+
+/* #skills {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#skills > li {
+    display: inline-block;
+}
+
+#my_skills {
+    width: 200px;
+    height: 200px;
+} */

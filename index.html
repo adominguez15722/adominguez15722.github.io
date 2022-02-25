@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Anthony's Portfolio</title>
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <header>
+        <a href="./index.html#about">About Me</a>
+        <a href="./index.html#skills">Skills</a>
+        <a href="./index.html#projects">Projects</a>
+        <a href="./index.html#contact">Contact Me</a>
+    </header>
+    
+    <h1>Anthony Dominguez's Portfolio</h1>
 
-    <h2>About Me</h2>
+    <h2 id="about">About Me</h2>
     <p> Welcome! My name is Anthony Dominguez. I consider myself as someone who is always up for a challenge whether it is a mental challenge or a physical one such as a "friendly" game of table tennis. In my spare time, I enjoy reading, gaming, or trying out new places to eat around the Dallas-Fort Worth area. Currently living in Dallas. Feel free to contact me with any opportunities big or small. Looking forward to connecting with you!</p>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Javascript</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Node.js</li>
-        <li>Git</li>
-        <li>Express</li>
-    </ul>
-
-    <h2>Projects</h2>
+    
+    <h2 id="skill_tree">Skills</h2>
+    <div class="centered">
+        <img src="./javascript_logo.jpg" id="skills" align="left" alt="Skills logos">
+        
+        <ul id="skills_list">
+            <li>Javascript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>Express</li>
+        </ul>
+    </div>
+<br>
+<br>
+<br>
+    <h2 id="projects">Projects</h2>
 
     <h3>BlackJack Project</h3>
-    <p> This project was a midterm assessment that I developed while at DevMountain Coding Program. We were given a week to build an application using the knowledge that we learned during the program. I decided to build the server using Express while using Axios to get information from the back end. The front was built with With this being my first ever coding project, my biggest takeaway from it was being able to hit a wall/bug and being able to persevere get to the solution through alot of trial and error.</p>
+    <p> This project was a midterm assessment that I developed while at DevMountain Coding Program. We were given a week to build an application using the knowledge that we learned during the program. I decided to build the server using Express while using Axios to get information from the back end. With this being my first ever coding project, my biggest takeaway from it was being able to hit a wall/bug and being able to persevere get to the solution through alot of trial and error.</p>
+
+    <p>Now listed on Heroku: <a href="https://foundations-capstone-project.herokuapp.com/">https://foundations-capstone-project.herokuapp.com/</a></p> 
+
+    <img src="./Blackjack Screenshot.jpg" alt="Blackjack_project_screenshot">
     
     <h4>Technology Used</h4>
     <ul>
@@ -40,8 +59,11 @@
     <p> One bug that I had the most trouble with was being able to change the value of the Ace card in the project. In the game of BlackJack, the purpose of the game is to reach 21 without going over, but you have to be closer than the dealer is to 21 otherwise you lose. The Ace card can be treated as an 11 or a 1 towards that total depending on your other cards, while every other card had a static value. I had to figure out a way to change that value dynamically behind the scenes for the dealer since the user would not interact with the dealers cards after they received all of their cards. In order to do this, I applied my knowledge of functions and loops in order to assign the value of the Ace card to change with the total value of the cards that the dealer was dealt. While the O(n) of this was O(n^2), with such a small amount of information that it had to loop through, the execution time difference was very minimal.</p>
 
 
-    <h2>Contact Me</h2>
+    <h2 id="contact">Contact Me</h2>
     <a href="https://www.linkedin.com/in/anthony-dominguez-a69070229/">LinkedIn</a>
-    <a href="adominguez15722@gmail.com">Email</a>
+    <a href="mailto:adominguez15722@gmail.com">Email</a>
+
+    <img src="./professional_picture.jpg" alt="headshot" id="headshot">
+    <script src="./main.js"></script>
 </body>
 </html>
